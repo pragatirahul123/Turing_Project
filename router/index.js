@@ -17,6 +17,27 @@ router.use("/read_categories",calling_api_get)
 var calling_api_get = require('./get_categories_id_route')
 router.use("/categoryid",calling_api_get)
 
+var calling_api_get = require('./categories_product_id_route')
+router.use("/productid",calling_api_get)
+
+var calling_api_get = require('./categories_department_id_route')
+router.use("/departmentid",calling_api_get)
+
+var calling_api_get = require('./get_attribute_route')
+router.use("/attribute",calling_api_get)
+
+var calling_api_get = require('./attribute_id_route')
+router.use("/attributeid",calling_api_get)
+
+var calling_api_get = require('./attribute_value_route')
+router.use("/attributevalue",calling_api_get)
+
+var calling_api_get = require('./attribute_product_id_route')
+router.use("/attributeproduct",calling_api_get)
+
+var calling_api_get = require('./get_product_route')
+router.use("/getproduct",calling_api_get)
+
 
 
 module.exports = router
