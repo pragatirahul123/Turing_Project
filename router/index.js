@@ -41,6 +41,9 @@ router.use("/getproduct",calling_api_get)
 var calling_api_get = require('./product_search_route')
 router.use("/productsearch",calling_api_get)
 
+var calling_api_get = require('./product_id_route')
+router.use("/getproductid",calling_api_get)
+
 
 
 module.exports = router
