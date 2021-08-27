@@ -53,6 +53,10 @@ router.use("/productdepartment",calling_api_get)
 var calling_api_get = require('./product_id_details_route')
 router.use("/productiddetails",calling_api_get)
 
+var calling_api_get = require('./product_location_route')
+router.use("/productlocation",calling_api_get)
+
+
 
 
 
