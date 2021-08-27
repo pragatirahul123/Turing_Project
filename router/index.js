@@ -50,6 +50,10 @@ router.use("/productcategoriesid",calling_api_get)
 var calling_api_get = require('./product_department_id_route')
 router.use("/productdepartment",calling_api_get)
 
+var calling_api_get = require('./product_id_details_route')
+router.use("/productiddetails",calling_api_get)
+
+
 
 
 module.exports = router
