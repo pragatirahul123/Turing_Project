@@ -56,6 +56,19 @@ router.use("/productiddetails",calling_api_get)
 var calling_api_get = require('./product_location_route')
 router.use("/productlocation",calling_api_get)
 
+var calling_api_get = require('./get_tax_route')
+router.use("/gettax",calling_api_get)
+
+var calling_api_get = require('./tax_id_route')
+router.use("/taxid",calling_api_get)
+
+var calling_api_get = require('./shipping_regions_route')
+router.use("/shippingregions",calling_api_get)
+
+var calling_api_get = require('./shipping_regions_id_route')
+router.use ("/shippingregionsid",calling_api_get)
+
+
 
 
 
