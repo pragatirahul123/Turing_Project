@@ -68,6 +68,9 @@ router.use("/shippingregions",calling_api_get)
 var calling_api_get = require('./shipping_regions_id_route')
 router.use ("/shippingregionsid",calling_api_get)
 
+var calling_api_get = require('./customer_register_route')
+router.use("/customerregister",calling_api_get)
+
 
 
 
